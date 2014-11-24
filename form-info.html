@@ -1,0 +1,49 @@
+<div class="col-md-6 bg-blue text-center min-height white wrap-offer">
+      <div class="offer">
+        <p class="amount hidden-sm"><span class="currency">$1</span></p>
+        <div class="program">
+          <h3 class="no-margin">Join our 7 days trial</h3>
+          <p class="text-thin">Full access to Amber program dashboard</p>
+        </div>
+        <ul class="benefits-list">
+          <li>We'll automatically create an account for you!</li>
+          <li>An email with the password will be sent to you shortly.</li>
+        </ul>
+    </div>
+</div>
+<div class="col-md-6 padding min-height">
+<fieldset>
+    <legend>Account info</legend>  
+                   
+    <div class="form-group">                    
+      <div class="col-sm-5 col-md-6 col-lg-5">
+        <input type="text" required class="form-control add-bg" name="first-name" ng-model="formData.firstName" id="first-name" placeholder="First Name">
+      </div>
+      <div class="col-sm-5 col-md-6 col-lg-5">
+        <input type="text" required class="form-control add-bg" name="last-name" ng-model="formData.lastName" id="last-name" placeholder="Last Name">
+      </div>
+    </div>
+    
+    <div class="form-group">                    
+      <div class="col-sm-5 col-md-6 col-lg-5">
+        <input type="text" required class="form-control" name="address" ng-model="formData.address" id="address" placeholder="Address">
+      </div>
+      <div class="col-sm-3 col-md-4">
+        <input type="number" required class="form-control" name="zip-code" ng-model="formData.zipCode" id="zip-code" placeholder="Zip Code">
+      </div>
+    </div>
+    
+    <div class="form-group">                    
+      <div class="col-sm-5 col-md-6 col-lg-5">
+        <input type="number" required class="form-control" name="phone" ng-model="formData.phone" id="phone" placeholder="Phone number">
+      </div>
+    </div>
+              
+    <div class="form-group">
+      <div class="col-sm-9">
+          <button type="submit" class="cta white bg-orange capital" ui-sref="form.cc">Continue</button>
+      </div>
+    </div>
+                  
+</fieldset>
+</div>

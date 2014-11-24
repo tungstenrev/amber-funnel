@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Amberchild - Protect your kids</title>
+        <meta name="description" content="">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1">     -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">    
+        
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/font-awesome.min.css">       
+        <link rel="stylesheet" href="css/vendor/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/main.css">
+                     
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>        
+
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+        <!-- JS -->
+        <!-- load angular, nganimate, and ui-router -->
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+        <script src="js/app.js"></script>
+           
+        
+    </head>
+    <body ng-app="formApp">
+    <a name="scrollto-home"></a>
+
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="status">
+        <i class="fa fa-spinner fa-spin"></i>
+        <p class="body-font">LOADING</p>
+      </div>
+    </div>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="row navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo-white.png" height="40" /></a>
+        </div>
+        
+        <div class="navbar-collapse collapse">          
+          <!--main navigation -->
+          <nav class="navbar-right" role="navigation">
+            <ul class="list-inline capital">              
+              <li><a href="#scrollto-home">Home</a></li>
+              <li><a href="#scrollto-features">Features</a></li>
+              <li><a href="#scrollto-map" id="geolocation-menu">Map</a></li>              
+              <li><a href="#scrollto-signup">SignUp</a></li>              
+            </ul>
+          </nav>
+        </div><!--/.navbar-collapse -->
+      </div><!--/.container -->
+    </div>
+
+
+
+    <div id="video">                
+    </div>    
+    <div class="overlay-bg"></div>
+
+<div class="container">
+    <form id="nl-form" class="nl-form">
+    
+      <div class="row">
+        <div class="col-md-12 text-center">   
+          There are 3368 sex offenders in California.<br />  How many live around
+          <!-- <input type="text" value="" placeholder="Texas" data-subline="For example: <em>Ohio</em> or <em>Nevada</em>"/>  -->
+           <input type="text" value="" placeholder="your zip code" data-subline="I agree to <a href='terms.html'>Terms of Use</a>" /> ?
+          <!-- <div class="nl-submit-wrap">
+            <button class="nl-submit" type="submit">Submit</button>
+          </div> -->  
+          <div id="geo-content">
+            <p id="geo-no">352</p>
+            <a href="#scrollto-map" id="geolocation" class="btn btn-default btn-lg ghost capital">
+              <i class="fa fa-map-marker"></i> See the map
+            </a>
+          </div>
+          <div class="nl-overlay"></div>
+        </div>
+      </div>        
+
+      
+    </form>
+
+          
+    </div>
+
+
+    <a name="scrollto-features"></a> 
+    <section id="features">
+      <div class="container">
+        
+        <div class="row text-center">
+          <div class="col-md-12 text-thin BMargin">
+              <h1>Benefits of the Amber program</h1>
+              <h4>Lorem Ipsum is simply dummy text of the printing lorem ipsum</h4>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-3">
+            <i class="fa fa-hdd-o narrow2"></i>
+            <h4>Sex offenders database</h4>
+            <p class="text-light">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>            
+          </div>
+          <div class="col-md-3">
+            <i class="fa fa-facebook"></i>
+            <h4>Social media coverage</h4>
+            <p class="text-light">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>            
+         </div>
+          <div class="col-md-3">
+            <i class="fa fa-mobile"></i>
+            <h4>Mobile coverage</h4>
+            <p class="text-light">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>            
+          </div>
+          <div class="col-md-3">
+            <i class="fa fa-users narrow"></i>
+            <h4>Your kids database</h4>
+            <p class="text-light">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>            
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12 TBMargin">
+            <a href="#scrollto-signup" class="btn btn-default btn-lg ghost inverse capital">Sign Up for a free account</a>          
+          </div>
+        </div>        
+
+      </div> <!-- /container -->     
+    </section> <!-- /features -->
+
+
+
+    <a name="scrollto-map"></a> 
+    <section id="map">      
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-12">                      
+          <div id="map-canvas">
+              <a href="#" class="geo-trigger">
+                  <i class="fa fa-map-marker"></i>
+                  <p class="title">Locate <br />sex ofenders</p>
+              </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- /map -->
+
+    <a name="screens"></a> 
+    <section id="screens">
+      <div class="container">
+        <div class="row">          
+          <div class="col-md-4 text-thin v-align">
+            <h1>Dashboard</h1>
+            <h4>The system is designed to assist Law Enforcement with quick identification of family and friends. It also contains your child’s online information (Email, Facebook, passwords, etc.) This system is very effective in locating coerced runaways.</h4>
+          </div>
+          <div class="col-md-8"><img class="img-responsive" src="img/screens.png" /></div>
+        </div>        
+      </div>
+    </section><!-- /screens -->
+
+
+    <a name="scrollto-signup"></a> 
+    <section id="signup" class="no-padding">
+      <div class="container-fluid">  
+
+        <div class="row" ui-view>
+          
+        </div> <!-- /row ui-view--> 
+
+      </div> <!-- /container-fluid -->     
+    </section> <!-- /signup -->
+
+
+    <section id="testimonials">
+      <div class="container">
+        
+        <div class="row text-center">
+          <div class="col-md-12 text-thin BMargin">
+              <h1>Because of parents like you.</h1>
+              <h4>More kids are safer because of the Amber program.</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1 col-md-offset-1">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="col-md-4">
+            <p class="twit">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."</p>
+            <p class="author">Samantha Connor, Chicago, Illinois</p>
+          </div>
+          <div class="col-md-1">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="col-md-4">
+            <p class="twit">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."</p>
+            <p class="author">Samantha Connor, Chicago, Illinois</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <a name="scrollto-footer"></a>
+    <section id="footer">
+      <div class="container">
+        <div class="row">          
+            
+            <footer>
+                <div class="col-md-6">
+                  <a class="navbar-brand" href="#"><img src="img/logo-white.png" height="40" /></a>
+                  
+                  <ul class="list-inline text-thin terms">
+                      <li><a href="#scrollto-footer">Terms and Conditions</a></li> | 
+                      <li><a href="#scrollto-footer">Legal</a></li> | 
+                      <li><a href="#scrollto-footer">&copy;2014 Amber Inc.</a></li>
+                    </ul>                   
+                </div>                
+                <div class="col-md-6">
+                  <nav class="navbar-right" role="navigation">
+                    <ul class="list-inline capital">
+                      <li><a href="#scrollto-home">Home</a></li>
+                      <li><a href="#scrollto-features">Features</a></li>
+                      <li><a href="#scrollto-map">Map</a></li>
+                      <li><a href="#scrollto-signup">SignUp</a></li>                      
+                    </ul>                    
+                    <div class="badges">
+                      <img src="img/badge1.png" />
+                      <img src="img/badge2.png" />
+                    </div>
+                  </nav>
+                </div>
+            </footer>
+
+         
+        </div>
+      </div>
+    </section>
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.videoBG.js"></script>        
+
+        <script src="js/vendor/bootstrap.min.js"></script>                     
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>            
+
+        <script src="js/vendor/nlform.js"></script>
+        
+        <script>          
+          var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+        </script>    
+        
+        
+    </body>
+</html>
